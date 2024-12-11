@@ -1,0 +1,28 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bbgpink: #e28090;
+  --darkbbgpink: #d16c7b;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+#Login_button{
+  color: white;
+  background-color: var(--bbgpink);
+}
+
+#Login_button:hover{
+  background-color: var(--darkbbgpink)
+}
+
+.icon {
+  color: var(--bbgpink);
+  
+}

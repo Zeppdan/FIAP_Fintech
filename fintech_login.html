@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Cap 04 View/CSS/Fintech Login Style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>PennyWise_Fintech_Signup</title>
+</head>
+<body>
+
+  <div class="rounded-x2 border bg-card text-card-foreground shadow">
+    <header class="flex justify-between items-center p-6">
+      <div class="flex flex-col space-y-1">
+        <h1 class="font-semibold tracking-tight text-2xl">Crie uma conta!</h1>
+        <h2 class="text-sm text-muted-foreground">
+          Preencha os campos abaixo para criar sua conta
+        </h2>
+      </div>
+        <div><img src="/Cap 04 View/Images/PW_Logo_Image.png" alt="PW_logo" class="h-16 w-16 object-cover rounded-[25px]">
+        </div>
+    </header>
+
+    <div class="p-6 pt-0 grid gap-4">
+
+      <!-- Campo NOME -->
+
+      <div class="grid gap-2">
+        <label 
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" 
+          for="nome">
+          Nome
+        </label>
+        <div class="relative">
+          <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-regular fa-user icon"></i>
+          <input 
+            class="pl-10 flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" 
+            id="nome" 
+            placeholder="Insira seu nome" 
+            type="text">
+        </div>
+
+      <!-- Campo SOBRENOME -->
+
+      <div class="grid gap-2">
+        <label 
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" 
+          for="sobrenome">
+          Sobrenome
+        </label>
+<div class="relative">
+    <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-regular fa-user icon"></i>
+    <input 
+      class="pl-10 flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" 
+      id="sobrenome" 
+      placeholder="Insira seu sobrenome" 
+      type="text">
+    </div>
+  </div> 
+
+      <!-- Campo EMAIL -->
+
+      <div class="grid gap-2">
+        <label 
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" 
+          for="email">
+          Email
+        </label>
+        <div class="relative">
+          <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-regular fa-envelope icon"></i>
+          <input 
+            class="pl-10 flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" 
+            id="email" 
+            placeholder="nome@exemplo.com" 
+            type="email">
+          </div>
+        </div>
+
+      <!-- Campo SENHA -->
+
+      <div class="grid gap-2">
+        <label 
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" 
+          for="senha">
+          Senha
+        </label>
+          <div class="relative">
+            <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-solid fa-lock icon"></i>
+            <input 
+              class="pl-10 flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" 
+          id="senha" 
+          placeholder="Insira sua senha" 
+          type="password">
+        </div>
+      </div>
+
+      <!-- Campo CONFIRMAÇÃO SENHA -->
+
+        <div class="grid gap-2">
+    <label 
+      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" 
+      for="senha2">
+      Confirme sua Senha
+    </label>
+    <div class="relative">
+      <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-solid fa-lock icon"></i>
+      <input 
+        class="pl-10 flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm" 
+        id="senha2" 
+        placeholder="Insira novamente sua senha" 
+        type="password">
+    </div>
+  </div>
+</div>
+
+<!-- BOTÃO LOGIN -->
+
+    <div class="flex items-center p-3 pt-3">
+      <button 
+        id="Login_button"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 w-full">
+        Fazer Login
+      </button>
+    </div>
+
+    <div class="relative p-4">
+      <div class="absolute inset-0 flex items-center">
+        <span class="w-full border-t"></span>
+      </div>
+      <div class="relative flex justify-center text-xs uppercase">
+        <span class="bg-background px-2 text-muted-foreground">Ou continue com</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6">
+      <!-- Botão Facebook -->
+      <button 
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+        <i class="fa-brands fa-facebook-f text-lg icon"></i>
+        Login com Facebook
+      </button>
+    
+      <!-- Botão Google -->
+      <button 
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+        <i class="fa-brands fa-google text-lg icon"></i>
+        Login com Google
+      </button>
+    </div>    
+</body>
+</html>
